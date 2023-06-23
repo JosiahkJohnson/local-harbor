@@ -1,0 +1,28 @@
+.logo {
+    max-width: 30px;
+    max-height: auto;
+}
+
+.cart {
+    max-width: 30px;
+    max-height: auto;
+    align-self: flex-end;
+}
+
+.cart-container {
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    padding: 5px;
+}
+
+.container-lg {
+    height: 100vh;
+    Margin-top: 10px;
+}
+
+.navbar {
+    padding: 2px;
+}

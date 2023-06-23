@@ -6,10 +6,11 @@
 
     <!--Load in bootstrap formatting-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
 
     <title>Home</title>
 </head>
-<body>
+<body class="bg-body-secondary">
     <!--Create the navbar-->
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
 
@@ -22,7 +23,7 @@
             </button>
 
             <!--Clickable logo icon that brings us to the home page-->
-            <a class="navbar-brand" href="index.html">Placeholder</a>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="../images/logo.png"></a>
 
             <!--This container will hold all of our actual menu items-->
             <div class="navbar-collapse" id="navbarNav">
@@ -44,18 +45,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Customer Service</a>
                     </li>
+
                 </ul>
 
             </div>
         </div>
-    </nav>
 
-    <p>
-        This is the home page
-    </p>
+        <!--Add the shopping cart on the other side of the nav menu-->
+        <div class="nav-item align-self-end cart-container">
+            <a href="#"><img class="cart" src="../images/cart.png"></a>
+        </div>
+    </nav>
+    
+    <!--Main Content Container-->
+    <div class="container-lg bg-body-tertiary">
+        <p>
+            This is the home page
+        </p>
+    </div>
+    
 </body>
 
 <footer>
+    <!--Crediting LogoMakr for the logo I created on their program-->
+    <p class="copyright text-center">Created my free logo and cart icon at <a href="https://logomakr.com/">LogoMakr.com</a></p>
+
     <!--Load in bootstrap functionality-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </footer>
