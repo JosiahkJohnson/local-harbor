@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>About</title>
+</head>
+<body>
+    <!--Create the navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+
+        <!--Main container within the nav bar to hold all the nav menu items with the logo seperately-->
+        <div class="container-fluid">
+
+            <!--This button will appear on smaller screens when the menu collapses, it will open the menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Clickable logo icon that brings us to the home page-->
+            <a class="navbar-brand" href="index.html">Placeholder</a>
+
+            <!--This container will hold all of our actual menu items-->
+            <div class="navbar-collapse" id="navbarNav">
+                
+                <!--Unordered list for all of our navbar items-->
+                <ul class="navbar-nav">
+
+                    <!--Home page link, will be active since this is the page we are currently on-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    
+                    <!--About page link-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+
+                    <!--Costumer Service page link-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customer Service</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <p>
+        This is the about page
+    </p>
+
+</body>
+
+<footer>
+    <!--bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</footer>
+</html>
