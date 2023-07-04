@@ -1,76 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Load in bootstrap formatting-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
 
     <title>Home</title>
-</head>
-<body class="bg-body-secondary">
+  </head>
+  <body class="bg-body-secondary">
     <!--Create the navbar-->
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <!--Main container within the nav bar to hold all the nav menu items with the logo seperately-->
+      <div class="container-fluid">
+        <!--This button will appear on smaller screens when the menu collapses, it will open the menu-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <!--Main container within the nav bar to hold all the nav menu items with the logo seperately-->
-        <div class="container-fluid">
+        <!--Clickable logo icon that brings us to the home page-->
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo" src="../images/logo.png"
+        /></a>
 
-            <!--This button will appear on smaller screens when the menu collapses, it will open the menu-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!--This container will hold all of our actual menu items-->
+        <div class="navbar-collapse" id="navbarNav">
+          <!--Unordered list for all of our navbar items-->
+          <ul class="navbar-nav">
+            <!--Home page link, will be active since this is the page we are currently on-->
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
 
-            <!--Clickable logo icon that brings us to the home page-->
-            <a class="navbar-brand" href="index.html"><img class="logo" src="../images/logo.png"></a>
+            <!--About page link-->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
 
-            <!--This container will hold all of our actual menu items-->
-            <div class="navbar-collapse" id="navbarNav">
-                
-                <!--Unordered list for all of our navbar items-->
-                <ul class="navbar-nav">
-
-                    <!--Home page link, will be active since this is the page we are currently on-->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    
-                    <!--About page link-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-
-                    <!--Costumer Service page link-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Customer Service</a>
-                    </li>
-
-                </ul>
-
-            </div>
+            <!--Costumer Service page link-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer Service</a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <!--Add the shopping cart on the other side of the nav menu-->
-        <div class="nav-item align-self-end cart-container">
-            <a href="#"><img class="cart" src="../images/cart.png"></a>
-        </div>
+      <!--Add the shopping cart on the other side of the nav menu-->
+      <div class="nav-item align-self-end cart-container">
+        <a href="#"><img class="cart" src="../images/cart.png" /></a>
+      </div>
     </nav>
-    
+
     <!--Main Content Container-->
     <div class="container-lg bg-body-tertiary">
-        <p>
-            This is the home page
-        </p>
-    </div>
-    
-</body>
+      <!--Container to hold the list of products for sale-->
+      <div class="sale container-fluid">
+        <!--Each row will hold onto three products that the user can click on-->
+        <div class="row">
+          <!--Wrapper will hold the picture and the product info as well as the click icon-->
+          <div class="col-4">
+            <!--First image in first row-->
+            <div class="wrapper text-center">
+              <img
+                class="image rounded mx-auto d-block"
+                src="../images/basketball.jpg"
+                alt="basketball"
+                srcset=""
+              />
+            </div>
+          </div>
 
-<footer>
+          <div class="col-4">
+            <!--Second image in the first row-->
+            <div class="wrapper text-center">
+              <img
+                class="image rounded mx-auto d-block"
+                src="../images/soccerball.jpg"
+                alt="soccerball"
+                srcset=""
+              />
+            </div>
+          </div>
+
+          <!--Third and final image in the first row-->
+          <div class="col-4">
+            <div class="wrapper text-center">
+              <img
+                class="image rounded mx-auto d-block"
+                src="../images/tennis.jpg"
+                alt="tennisball"
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--Row two and so on..-->
+        <div class="row">
+          <div class="col-4">
+            <div class="wrapper text-center">
+              <img
+                class="image rounded mx-auto d-block"
+                src="../images/bright_bed_set.jpg"
+                alt="bright bed"
+                srcset=""
+              />
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="wrapper text-center">
+              <img
+                class="image rounded mx-auto d-block"
+                src="../images/pexels-pixabay-279746.jpg"
+                alt="normal bed"
+                srcset=""
+              />
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="wrapper text-center">
+              <img
+                class="image rounded mx-auto d-block"
+                src="../images/lawn_mower.jpg"
+                alt="lawn mower"
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--Third and final row-->
+        <div class="row">
+          <div class="col-4">
+            <div class="wrapper text-center">
+              <img
+                class="image rounded mx-auto d-block"
+                src="../images/fancy_chair.jpg"
+                alt="fancy chair"
+                srcset=""
+              />
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="wrapper text-center">
+              <img
+                class="image rounded mx-auto d-block"
+                src="../images/normal_chair.jpg"
+                alt="normal chair"
+                srcset=""
+              />
+            </div>
+          </div>
+          
+          <div class="col-4">
+            <div class="wrapper text-center">
+              <img
+                class="image rounded mx-auto d-block"
+                src="../images/stool.jpg"
+                alt="stool"
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
     <!--Crediting LogoMakr for the logo I created on their program-->
-    <p class="copyright text-center">Created my free logo and cart icon at <a href="https://logomakr.com/">LogoMakr.com</a></p>
+    <p class="copyright text-center">
+      Created my free logo and cart icon at
+      <a href="https://logomakr.com/">LogoMakr.com</a>
+    </p>
 
     <!--Load in bootstrap functionality-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </footer>
 </html>

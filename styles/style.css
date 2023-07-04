@@ -26,3 +26,12 @@
 .navbar {
     padding: 2px;
 }
+
+img {
+    max-width: 50%;
+    max-height: 250px;
+}
+
+.wrapper {
+    padding-bottom: 100px;
+}
