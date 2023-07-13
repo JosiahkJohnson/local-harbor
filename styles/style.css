@@ -19,8 +19,9 @@
 }
 
 .container-lg {
-    height: 100vh;
+    height: 100%;
     Margin-top: 10px;
+    padding-bottom: 50px;
 }
 
 .navbar {
@@ -30,8 +31,9 @@
 img {
     max-width: 50%;
     max-height: 250px;
+    padding-top: 50px;
 }
 
-.wrapper {
-    padding-bottom: 100px;
+.add-button {
+    font-size: large;
 }
