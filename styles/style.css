@@ -37,3 +37,7 @@ img {
 .add-button {
     font-size: large;
 }
+
+.wrapper {
+    margin: 10px;
+}
