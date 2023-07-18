@@ -4,7 +4,7 @@ let basket = [];
 //load the cart from local storage and fill the array
 if(JSON.parse(localStorage.getItem("cart"))!=null){
     basket = JSON.parse(localStorage.getItem("cart"));
-}
+};
 
 //pointer to the main container we are appending things to
 const container = $(".sale");
@@ -21,7 +21,7 @@ if(basket.length == 0) {
     wrapper.addClass("wrapper");
 
     //message
-    $('<p>' + "No items in cart" + '<p>').appendTo(wrapper);
+    $('<p>' + "No items in cart" + '</p>').appendTo(wrapper);
 
     //remember to actually add everything to the html document
     row.append(wrapper);
@@ -65,7 +65,7 @@ else {
 
         //add the values
         $('<p>' + basket[i].name + '<p>').appendTo(name);
-        $('<p>' + basket[i].price + '<p>').appendTo(price);
+        $('<p>' + "$" + basket[i].price + '<p>').appendTo(price);
 
         //append them to the container
         row.append(name);

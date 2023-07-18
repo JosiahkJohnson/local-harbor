@@ -138,7 +138,7 @@ function saveData(data) {
     //append the data to the basket
     basket.push(data);
 
-    alert(JSON.stringify(data));
+    alert(JSON.stringify(data.name + " added"));
     //store the data in the browser
     localStorage.setItem("cart",JSON.stringify(basket));
 };
