@@ -34,14 +34,34 @@ else {
     for(i = 0; i < basket.length; i++) {
 
         //create the divs we are going to need
-        let row = $("<div>");
-        let name = $("<div>");
-        let price = $("<div>");
+        const row = $("<div>");
+        const name = $("<div>");
+        const price = $("<div>");
+        //create the button to remove the item
+        const button = $("<button>" + "Remove" + "</button>");
+        const buttonContainer = $("<div>");
 
         //set the proper classes for the row name and price divs
         row.addClass("row");
         name.addClass("col");
         price.addClass("col");
+        //add classes to the button
+        button.addClass("btn btn-danger rounded-pill");
+        buttonContainer.addClass("col container");
+
+        //give the button an id to identify it on the page
+        button.attr("id", i);
+
+        //add the function to the button
+        button.on("click", function(event) {
+            //target the button
+            const eventID = $(this).attr("id");
+
+            //removes item from the array
+            basket.splice(eventID, 1);
+            localStorage.setItem("cart",JSON.stringify(basket));
+            location.reload();
+        });
 
         //add the values
         $('<p>' + basket[i].name + '<p>').appendTo(name);
@@ -50,6 +70,8 @@ else {
         //append them to the container
         row.append(name);
         row.append(price);
+        buttonContainer.append(button);
+        row.append(buttonContainer);
         container.append(row);
     }
 }

@@ -12,7 +12,7 @@ $("#basketball").on("click", function(event){
     event.preventDefault();
 
     //basketball price is $40
-    let add = {
+    const add = {
         name: "Basketball",
         price: 40
     }
@@ -26,7 +26,7 @@ $("#soccerball").on("click", function(event){
     event.preventDefault();
 
     //soccerball price is $30
-    let add = {
+    const add = {
         name: "Soccerball",
         price: 30
     }
@@ -40,7 +40,7 @@ $("#tennisball").on("click", function(event){
     event.preventDefault();
 
     //tennisball price is $2
-    let add = {
+    const add = {
         name: "Tennisball",
         price: 2
     }
@@ -54,7 +54,7 @@ $("#bedset").on("click", function(event){
     event.preventDefault();
 
     //bedset price is $750
-    let add = {
+    const add = {
         name: "Bedset",
         price: 750
     }
@@ -68,7 +68,7 @@ $("#bed").on("click", function(event){
     event.preventDefault();
 
     //bed price is $400
-    let add = {
+    const add = {
         name: "Bed",
         price: 400
     }
@@ -82,7 +82,7 @@ $("#lawnmower").on("click", function(event){
     event.preventDefault();
 
     //lawnmower price is $400
-    let add = {
+    const add = {
         name: "Lawnmower",
         price: 400
     }
@@ -96,7 +96,7 @@ $("#round-chair").on("click", function(event){
     event.preventDefault();
 
     //fancy chair price is $75
-    let add = {
+    const add = {
         name: "Rounded chair",
         price: 75
     }
@@ -110,7 +110,7 @@ $("#chair").on("click", function(event){
     event.preventDefault();
 
     //chair price is $50
-    let add = {
+    const add = {
         name: "Chair",
         price: 50
     }
@@ -124,7 +124,7 @@ $("#stool").on("click", function(event){
     event.preventDefault();
 
     //stool price is $30
-    let add = {
+    const add = {
         name: "Stool",
         price: 30
     }
