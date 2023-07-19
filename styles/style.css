@@ -39,3 +39,10 @@ img {
 .wrapper {
     margin: 10px;
 }
+
+.form-group {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}

@@ -53,7 +53,7 @@ else {
         button.attr("id", i);
 
         //add the function to the button
-        button.on("click", function(event) {
+        button.on("click", function() {
             //target the button
             const eventID = $(this).attr("id");
 

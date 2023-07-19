@@ -10,7 +10,7 @@
     <!--Load in the custom stylesheet-->
     <link rel="stylesheet" href="../styles/style.css">
 
-    <title>About</title>
+    <title>Customer Service</title>
 </head>
 <body class="bg-body-secondary">
     <!--Create the navbar-->
@@ -40,12 +40,12 @@
                     
                     <!--About page link-->
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">About</a>
+                        <a class="nav-link" href="../pages/about.html">About</a>
                     </li>
 
                     <!--Costumer Service page link-->
                     <li class="nav-item">
-                        <a class="nav-link" href="./service.html">Customer Service</a>
+                        <a class="nav-link active" href="#">Customer Service</a>
                     </li>
                 </ul>
 
@@ -60,20 +60,15 @@
 
     <!--Main content container-->
     <div class="container-lg bg-body-tertiary">
-        <h2 class="text-center">Our Story:</h2>
-        
-        <p>
-            Local harbor had its humble beginnings in Memphis Tennessee. The first retail store begain in a foreclosure auction for 
-            a warehouse full of random freight. Local harbor had all of the infrastructure needed to begin its local shipping business.
-        </p>
-        <p>
-            A later expansion gave the company access to the Mississippi river to allow for shipments potentially reaching around the
-            world. Orders were taken by mail and were fulfilled within a week. What started with local shoppers expanded world-wide.
-        </p>
-        <p>
-            Recently, localharbor launched its own website to have direct control over its shipping services. Previously, local harbor was
-            reliant on third-party retailers for their online presence.
-        </p>
+        <!--This container holds the chat form-->
+        <div class="chat">
+            <div class="form-group">
+                <label for="messageHistory">Chat History</label>
+                <textarea id="messageHistory" cols="15" rows="50" class="form-control"></textarea>
+                <input type="text" class="form-control" placeholder="Message" id="sending">
+                <button class="btn btn-danger" id="send">Send</button>
+            </div>
+        </div>
     </div>
     
 </body>
@@ -82,7 +77,13 @@
     <!--Crediting LogoMakr for the logo I created on their program-->
     <p class="copyright text-center">Created my free logo and cart icon at <a href="https://logomakr.com/">LogoMakr.com</a></p>
 
+    <!-- JQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!--bootstrap script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!--Loading a custom script-->
+    <script src="../scripts/service.js"></script>
 </footer>
 </html>
